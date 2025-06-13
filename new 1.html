@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Houses - Book Your Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .houses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem;
+    }
+    .house {
+      background: white;
+      border-radius: 8px;
+      margin: 1rem;
+      padding: 1rem;
+      width: 350px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .house img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    input, textarea, select {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 0.7rem;
+      padding: 0.7rem;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Royal Houses</h1>
+  <p>The Royal Houses are located in Steni, Paphos - a small, friendly, peaceful village with a panoramic view that compliments the surrounding landscape and the crystal-clear Meditteranean Sea, just 8km away. It is the ideal destination for relaxation. Each house has 3 en-suite bedrooms, fully air-conditioned for the summer and also contains a fireplace for the winter. </p>
+  <p> <a href="mailto:theroyalhousescy@gmail.com?subject=More information"> Contact us</a> for more details. </p>
+</header>
+
+<section class="houses">
+  <div class="house">
+    <img src="the_queen_pool.jpg" alt="The Queen's pool">
+	<img src="royal_houses_pools.jpg" alt="The Queen's pool">
+    <h2>The Queen</h2>
+    <p>Beautiful 3-bedroom villa with private pool and garden. €150 per night.</p>
+
+    <form action="mailto:theroyalhousescy@gmail.com?subject=Booking for Reservation" method="POST" enctype="text/plain">
+      <h3>Book This House</h3>
+      <input type="hidden" name="House" value="The Queen">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+      <input type="text" id="queen-datepicker" placeholder="Select your stay dates" required>
+      <textarea name="Message" rows="3" placeholder="Additional Message (Optional)"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <div class="house">
+    <img src="https://via.placeholder.com/300x200" alt="House 2">
+    <h2>The Prince</h2>
+    <p>Beautiful 3-bedroom villa with private pool and garden. €150 per night.</p>
+
+    <form action="mailto:theroyalhousescy@gmail.com?subject=Booking for Reservation" method="POST" enctype="text/plain">
+      <h3>Book This House</h3>
+      <input type="hidden" name="House" value="The Prince">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+      <input type="text" id="prince-datepicker" placeholder="Select your stay dates" required>
+      <textarea name="Message" rows="3" placeholder="Additional Message (Optional)"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Royal Houses. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+<script>
+  // Example of booked dates (these would ideally be fetched dynamically from the backend)
+  const bookedDates = [
+    "2025-06-10", "2025-06-11", "2025-06-15", "2025-07-01"
+  ];
+
+  new Litepicker({
+    element: document.getElementById('queen-datepicker'),
+    singleMode: false,
+    format: 'YYYY-MM-DD',
+    lockDays: bookedDates
+  });
+
+  new Litepicker({
+    element: document.getElementById('prince-datepicker'),
+    singleMode: false,
+    format: 'YYYY-MM-DD',
+    lockDays: bookedDates
+  });
+</script>
+
+</body>
+</html>
