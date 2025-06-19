@@ -90,3 +90,25 @@
       <button type="submit">Book Now</button>
     </form>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+<script>
+  // Booked dates (example)
+  const bookedDates = [
+    "2025-06-10", "2025-06-11", "2025-06-15", "2025-07-01"
+  ];
+
+  new Litepicker({
+    element: document.getElementById('queen-datepicker'),
+    singleMode: false,
+    format: 'YYYY-MM-DD',
+    lockDays: bookedDates
+  });
+
+  new Litepicker({
+    element: document.getElementById('prince-datepicker'),
+    singleMode: false,
+    format: 'YYYY-MM-DD',
+    lockDays: bookedDates
+  });
+</script>
