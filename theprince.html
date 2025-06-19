@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="The Royal Houses, royal families, history, queens, prince, the royalhouses.cy, Steni, Paphos, Cyprus, en-suite, pool">
+  <title>The Royal Houses | Official Website</title>
+<meta name="description" content="Discover and book your stay at The Royal Houses - experience history, royalty, and grandeur.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .houses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem;
+    }
+    .house {
+      background: white;
+      border-radius: 8px;
+      margin: 1rem;
+      padding: 1rem;
+      width: 350px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .house img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    input, textarea, select {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 0.7rem;
+      padding: 0.7rem;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
 
+  <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+<script>
+  // Booked dates (example)
+  const bookedDates = [
+    "2025-06-10", "2025-06-11", "2025-06-15", "2025-07-01"
+  ];
+
+  new Litepicker({
+    element: document.getElementById('queen-datepicker'),
+    singleMode: false,
+    format: 'YYYY-MM-DD',
+    lockDays: bookedDates
+  });
+
+  new Litepicker({
+    element: document.getElementById('prince-datepicker'),
+    singleMode: false,
+    format: 'YYYY-MM-DD',
+    lockDays: bookedDates
+  });
+</script>
