@@ -56,9 +56,10 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
       padding-bottom: 2rem;
     }
     .house {
+  margin: 2rem auto;
+  max-width: 90%;
   background: white;
   border-radius: 8px;
-  margin: 4rem 12rem;
   padding: 0.005rem;
   width: 250px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -136,7 +137,7 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
     
 .nav-links li a {
   color: white;
-  font-size: 3rem;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -240,33 +241,11 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 Whether you are seeking a quiet family holiday or to celebrate a special event, our Steni homes are your perfect getaway!</p>
       </div>
 </section>
-
+  
 
 <footer>
   <p>&copy; The Royal Houses. All rights reserved.</p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
-<script>
-  // Example of booked dates (these would ideally be fetched dynamically from the backend)
-  const bookedDates = [
-    "2025-06-10", "2025-06-11", "2025-06-15", "2025-07-01"
-  ];
-
-  new Litepicker({
-    element: document.getElementById('queen-datepicker'),
-    singleMode: false,
-    format: 'YYYY-MM-DD',
-    lockDays: bookedDates
-  });
-
-  new Litepicker({
-    element: document.getElementById('prince-datepicker'),
-    singleMode: false,
-    format: 'YYYY-MM-DD',
-    lockDays: bookedDates
-  });
-</script>
 
 </body>
 </html>
