@@ -9,7 +9,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
   <style>
 
-.gallery-grid {
+.gallery img {
+  width: 220px;        /* adjust size as needed */
+  height: 160px;
+  object-fit: cover;   /* makes sure images fill the box without distortion */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border: 2px dashed black; /* remove or change if desired */
+}
+
+  .gallery-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   gap: 1rem;
@@ -299,7 +309,7 @@ Whether you are seeking a quiet family holiday or to celebrate a special event, 
     <img src="queen_downstairs.jpg" alt="The Queen's living room and kitchen in a golden aesthetic hue">
     <img src="royal_houses_view.jpg" alt="A beautiful view from The Royal Houses">
     <img src="table_and_pools.jpg" alt="Both pools of The ROyal Houses accompanied by an aesthetic table with traditional Cypriot pastries">
-    <img src="the_royal_houses.jpg" alt="A view of The Royal Houses themselves">
+    <img src="the_royal_houses.JPG" alt="A view of The Royal Houses themselves">
   </div>
 </section>
 
