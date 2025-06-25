@@ -89,6 +89,7 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 }
 
 .nav-container {
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,12 +99,16 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 }
 
 .logo {
+  text-align: center;
+  margin-bottom: 0.5rem;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .nav-links {
+  justify-content: center;
+  text-align: center;
   list-style: none;
   display: flex;
   gap: 1.5rem;
@@ -146,7 +151,6 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 <body>
 <nav class="top-nav">
   <div class="nav-container">
-    <div class="logo">Royal Houses</div>
     <button class="menu-toggle">&#9776;</button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
