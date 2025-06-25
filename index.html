@@ -109,7 +109,17 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
   list-style: none;
   display: flex;
 }
+    
+.nav-links li {
+  list-style: none;
+  padding: 0 1rem;
+  border-right: 1px solid white;
+}
 
+.nav-links li:last-child {
+  border-right: none; /* Removes the last border */
+}
+    
 .nav-links li a {
   color: white;
   font-size: 3rem;
