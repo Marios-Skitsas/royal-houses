@@ -103,6 +103,19 @@ header {
   </style>
 </head>
   <body>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+      const link = document.createElement('a');
+      link.href = img.src;
+      link.target = '_blank';
+      img.parentNode.insertBefore(link, img);
+      link.appendChild(img);
+    });
+  });
+</script>
+    
        <header>
   <h1>THE ROYAL HOUSES</h1>
     </header>
