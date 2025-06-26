@@ -8,6 +8,39 @@
 <meta name="description" content="Discover and book your stay at The Royal Houses - experience history, royalty, and grandeur.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
   <style>
+  .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.house {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.gallery {
+  flex: 1 1 45%;
+  max-width: 600px;
+  text-align: right;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -78,7 +111,7 @@ header {
        <header>
   <h1>THE ROYAL HOUSES</h1>
     </header>
-<section class="houses">
+<section class="content-wrapper">
   <div class="house">
 <h2>Queen</h2>
 <p>Villa Queen is a tranquil retreat that sleeps up to 6 guests with 2 double beds and 2 single beds, an excellent choice for families or small groups. Each of the 3 stylish bedrooms has its own en suite bathroom. Located in an area renowned for its spectacular sunsets, the villa features a stunning infinity pool perfectly positioned to take in the view. Inside, golden-hued interiors and elegant finishes create a warm and welcoming atmosphere. Guests can enjoy the comfort of air conditioning in the summer and a cozy fireplace in winter, making it a perfect year-round getaway.</p> 
@@ -97,6 +130,13 @@ header {
       <button type="submit">Book Now</button>
     </form>
   </div>
+  <div class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="image1.jpg" alt="Queen Villa Photo 1">
+      <img src="image2.jpg" alt="Queen Villa Photo 2">
+      <img src="image3.jpg" alt="Queen Villa Photo 3">
+    </div>
 </section>
   </body>
 
