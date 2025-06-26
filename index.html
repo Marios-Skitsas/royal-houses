@@ -213,6 +213,17 @@ text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
   </style>
 </head>
 <body>
+
+<script>
+  document.querySelectorAll('.gallery-grid img').forEach(img => {
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.target = '_blank';
+    img.parentNode.insertBefore(link, img);
+    link.appendChild(img);
+  });
+</script>
+
 <nav class="top-nav">
   <div class="nav-container">
     <button class="menu-toggle">&#9776;</button>
