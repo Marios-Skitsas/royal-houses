@@ -4,15 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="The Royal Houses, royal families, history, queens, prince, the royalhouses.cy, Steni, Paphos, Cyprus, en-suite, pool">
-  <title>The Prince | Book Your Stay</title>
+  <title>The Queen | Book Your Stay</title>
 <meta name="description" content="Discover and book your stay at The Royal Houses - experience history, royalty, and grandeur.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
   <style>
+  .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.house {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.gallery-grid {
+display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px;
+}
+
+.gallery-grid img {
+  height: auto;
+  border-radius: 6px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: f8f8f8;
+    }
 header {
   background-image: url(royal_houses_pools1.jpg);
   background-size: cover;
@@ -74,33 +103,55 @@ header {
   </style>
 </head>
   <body>
-    <header>
+       <header>
   <h1>THE ROYAL HOUSES</h1>
     </header>
-<section class="houses">
-<div class="house">
+<section class="content-wrapper">
+  <div class="house">
 <h2>Prince</h2>
 <p>Villa Prince, comfortably accommodates up to 6 guests with 3 spacious bedrooms each with its own en suite bathrooms. There are 2 double beds and 2 single beds- spacious enough for families and friends.  Nestled in a prime location with breathtaking sunset views, this fully furnished villa offers the perfect setting for unforgettable memories. Enjoy a bold, colorful interior design with modern amenities including Wi-Fi, air conditioning and a fireplace. Relax in the stunning infinity pool overlooking breathtaking views that perfectly captures the golden hour.</p>
 <p>Minimum stay is 4 nights (shorter stays are subjected to higher rates).</p>
 <p>No pets allowed.</p>	  
 
-    
-
-</p>
 
     <form action="mailto:theroyalhousescy@gmail.com?subject=Booking for Reservation" method="POST" enctype="text/plain">
       <h3>Book This House</h3>
-      <input type="hidden" name="House" value="The Prince">
+      <input type="hidden" name="House" value="The Queen">
       <input type="text" name="Name" placeholder="Your Name" required>
       <input type="email" name="Email" placeholder="Your Email" required>
       <input type="tel" name="Phone" placeholder="Your Phone Number" required>
-      <input type="text" id="prince-datepicker" placeholder="Select your stay dates" required>
+      <input type="text" id="queen-datepicker" placeholder="Select your stay dates" required>
       <textarea name="Message" rows="3" placeholder="Additional Message (Optional)"></textarea>
       <button type="submit">Book Now</button>
     </form>
   </div>
+  <div class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="p1.jpg" alt="The Prince's pool at sunset">
+      <img src="p2.jpg" alt="The Prince's double-bed">
+      <img src="p3.jpg" alt="The Prince's kitchen table">
+      <img src="p4.jpg" alt="The Prince's kitchen from a wider view">
+      <img src="p5.JPG" alt="The Prince's downstairs area">
+      <img src="p6.JPG" alt="A closeup of The Prince's kitchen counter">
+      <img src="p7.JPG" alt="The Prince's living room with a red fireplace and a signature red couch">
+      <img src="p8.JPG" alt="The Prince's outdoor area with two sunbeds">
+      <img src="p9.JPG" alt="The Prince's double-bed">
+      <img src="p10.JPG" alt="The Prince's double-bed along with its cupboard and curtains">
+      <img src="p11.JPG" alt="The Prince's pool along with a stunning view of Cypriot nature">
+      <img src="p12.JPG" alt="The Prince's bathroom">
+      <img src="p13.jpg" alt="A wider shot of The Prince's downstairs area with open windows.">
+      <img src="p14.jpg" alt="The Prince's living room accompanied by a view of the local church">
+      <img src="p15.jpg" alt="The Prince's two single beds">
+      <img src="p16.jpg" alt="The Prince's bathroom and shower">
+      <img src="p17.jpg"  alt="The Prince's sink and toilet">
+      <img src="p18.jpg" alt="A close-up of The Prince's shower">
+      <img src="p19.jpg" alt="The Prince's pool at night">
+      <img src="p20.jpg" alt="A close-up of The Prince's pool with the sunbeds">
+    </div>
 </section>
-</body>
+  </body>
+
   <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
 <script>
   // Booked dates (example)
